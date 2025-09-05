@@ -57,7 +57,7 @@ To get started, first clone the repository with `git clone <repo_url>` and navig
 
 
 
-Pipeline
+## Pipeline
 
 Data Ingestion:
 
