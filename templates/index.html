@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyberbullying Detection</title>
+</head>
+<body>
+    <h1>Cyberbullying Detection</h1>
+    <form action="/predict" method="post">
+        <textarea name="comment" rows="4" cols="50" placeholder="Enter your comment here">{{ comment if comment else '' }}</textarea>
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+    <h2>Prediction Result:</h2>
+    <p><strong>Comment:</strong> {{ comment }}</p>
+    <p><strong>Predicted Label:</strong> {{ prediction }}</p>
+    <p><strong>Probabilities:</strong> {{ probabilities }}</p>
+    {% endif %}
+</body>
+</html>
